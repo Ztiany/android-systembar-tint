@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/id_menu_nav_all"
+            android:checkable="true"
+            android:checked="true"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="All"/>
+
+        <item
+            android:id="@+id/id_menu_nav_category"
+            android:checkable="true"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="分类"/>
+
+
+        <item
+            android:id="@+id/id_menu_nav_random"
+            android:checkable="true"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="随便看看"/>
+
+
+        <item
+            android:id="@+id/id_menu_nav_girls"
+            android:checkable="true"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="纯妹子"/>
+
+        <item
+            android:id="@+id/id_menu_nav_detail"
+            android:checkable="true"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="每日详情"/>
+
+
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/id_menu_setting"
+                android:checkable="true"
+                android:icon="@drawable/ic_action_location_found_dark"
+                android:title="setting"/>
+            <item
+                android:id="@+id/id_menu_nav_about"
+                android:checkable="true"
+                android:icon="@drawable/ic_action_location_found_dark"
+                android:title="About"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SystemBar</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="open_drawer">打开抽屉</string>
+    <string name="close_drawer">关闭抽屉</string>
+
+
+    <string name="list">列表</string>
+    <string name="overview">总览</string>
+
+</resources>

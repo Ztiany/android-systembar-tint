@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ztiany.systembar"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".trans.CodeColorStatusActivity"/>
+        <activity android:name=".trans.CodeOtherActivity"/>
+        <activity
+            android:name=".trans.ThemeColorStatusActivity"
+            android:theme="@style/AppTheme.ColorStatus"/>
+        <activity
+            android:name=".trans.ThemeOtherActivity"
+            android:theme="@style/AppTheme.ColorStatus"/>
+
+
+        <activity
+            android:name=".trans.SwipeBackTestActivity"
+            android:theme="@style/AppTheme.ColorStatusSwipe">
+        </activity>
+    </application>
+
+</manifest>
