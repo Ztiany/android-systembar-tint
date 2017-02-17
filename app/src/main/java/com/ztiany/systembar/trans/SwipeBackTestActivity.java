@@ -2,38 +2,33 @@ package com.ztiany.systembar.trans;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 
 import com.ztiany.systembar.R;
-import com.ztiany.systembar.compat.AppCompat;
-import com.ztiany.systembar.compat.ResourceUtil;
-import com.ztiany.systembar.compat.SystemBarCompat;
+import com.ztiany.systembar.utils.AndroidVersion;
+import com.ztiany.systembar.utils.ResourceUtil;
+import com.ztiany.systembar.utils.SystemBarCompat;
 
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
 public class SwipeBackTestActivity extends SwipeBackActivity {
-    private static final String TAG = SwipeBackTestActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipe_back);
-        android.support.v7.app.ActionBar supportActionBar = getSupportActionBar();
+
+        ActionBar supportActionBar = getSupportActionBar();
+
         if (supportActionBar != null) {
             supportActionBar.setBackgroundDrawable(new ColorDrawable(ResourceUtil.getColor(R.color.colorAccent, this)));
-            if (AppCompat.afterLollipop()) {
+            if (AndroidVersion.above(20)) {
                 supportActionBar.setElevation(0);
             }
         }
-
-//        getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
-
-        WindowManager.LayoutParams attributes = getWindow().getAttributes();
-
-
-
-        if (AppCompat.afterKITKAT()) {
+ 
+        if (AndroidVersion.atLeast(19)) {
             ViewGroup viewGroup = (ViewGroup) findViewById(R.id.root);
             SystemBarCompat.setupStatusBarView(this, viewGroup, ResourceUtil.getColor(R.color.colorAccent, this));
         }

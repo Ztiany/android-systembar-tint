@@ -16,37 +16,26 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="codeColor"
-        android:text="1"/>
+        android:onClick="statusColor"
+        android:text="Status"/>
 
 
     <Button
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-        android:onClick="codeOther"
-        android:text="2"/>
-
+        android:onClick="fullImage"
+        android:text="FullImage"/>
 
     <Button
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-        android:onClick="themeColor"
-        android:text="3"/>
+        android:onClick="table"
+        android:text="Table"/>
 
-
-    <Button
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:onClick="themeOther"
-        android:text="4"/>
 
 
     <Button
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
         android:onClick="swipeBack"
         android:text="swipe_back"/>

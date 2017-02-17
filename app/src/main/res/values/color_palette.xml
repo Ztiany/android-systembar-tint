@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#0000FF</color> <!-- 蓝色 -->
+    <color name="yellow">#FFFF00</color> <!-- 黄色 -->
+    <color name="orange">#FFA500</color> <!-- 橙色 -->
+    <color name="red">#FF0000</color> <!-- 红色 -->
+    <color name="purple">#800080</color> <!-- 紫色 -->
+    <color name="green">#ff00ff00</color> <!-- 绿色 -->
+    <color name="cyan">#FF00FFFF</color> <!-- 青色 -->
+    <color name="gold">#FFD700</color> <!-- 金色 -->
+    <color name="silver">#C0C0C0</color> <!-- 银色 -->
+
+
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="gray">#ff969696</color> <!-- 灰色 -->
+
+
+    <color name="transparent">#00000000</color><!--透明-->
+
+
+</resources>

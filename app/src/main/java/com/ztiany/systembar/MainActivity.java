@@ -14,20 +14,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.ztiany.systembar.compat.ResourceUtil;
-import com.ztiany.systembar.compat.SystemBarCompat;
-import com.ztiany.systembar.trans.CodeColorStatusActivity;
-import com.ztiany.systembar.trans.CodeOtherActivity;
+import com.ztiany.systembar.table.DrawerLayoutTabActivity;
+import com.ztiany.systembar.trans.FullImageActivity;
+import com.ztiany.systembar.trans.StatusColorActivity;
 import com.ztiany.systembar.trans.SwipeBackTestActivity;
-import com.ztiany.systembar.trans.ThemeColorStatusActivity;
-import com.ztiany.systembar.trans.ThemeOtherActivity;
+import com.ztiany.systembar.utils.ResourceUtil;
+import com.ztiany.systembar.utils.SystemBarCompat;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Bind(R.id.act_main_drawer)
     DrawerLayout mDrawerLayout;
@@ -59,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setStatusBar() {
-        SystemBarCompat.setTranslucentStatusForKitkat(this);
-        SystemBarCompat.setStatusBarColorForKitkat(this, ResourceUtil.getColor(R.color.colorPrimary, this));
+        SystemBarCompat.setTranslucentStatusOnKitkat(this);
+        SystemBarCompat.setStatusBarColorOnKitkat(this, ResourceUtil.getColor(R.color.colorPrimary, this));
     }
 
     @Override
@@ -130,23 +128,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void codeColor(View view) {
-        startActivity(new Intent(this, CodeColorStatusActivity.class));
+    public void statusColor(View view) {
+        startActivity(new Intent(this, StatusColorActivity.class));
     }
 
-    public void codeOther(View view) {
-        startActivity(new Intent(this, CodeOtherActivity.class));
-
+    public void fullImage(View view) {
+        startActivity(new Intent(this, FullImageActivity.class));
     }
 
-    public void themeColor(View view) {
-        startActivity(new Intent(this, ThemeColorStatusActivity.class));
-
+    public void table(View view) {
+        startActivity(new Intent(this, DrawerLayoutTabActivity.class));
     }
 
-    public void themeOther(View view) {
-        startActivity(new Intent(this, ThemeOtherActivity.class));
-    }
 
     public void swipeBack(View view) {
         startActivity(new Intent(this, SwipeBackTestActivity.class));
